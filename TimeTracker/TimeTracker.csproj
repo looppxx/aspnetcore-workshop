@@ -9,5 +9,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.5.0" />
   </ItemGroup>
 </Project>

@@ -29,7 +29,8 @@ namespace TimeTracker
         {
             services.AddDbContext<TimeTrackerDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation(
+                fv => fv.RegisterValidatorsFromAssemblyContaining<UserInputModelValidator>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
