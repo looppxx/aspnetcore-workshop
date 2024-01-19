@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace TimeTracker.Domain{
     public class Client
     {
